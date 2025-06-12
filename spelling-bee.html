@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spelling Bee</title>
+  <link rel="stylesheet" href="spelling-bee.css" />
+</head>
+<body>
+  <header>
+    <h1>Spelling Bee</h1>
+    <nav>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="games.php">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="bee-container">
+    <p class="instruction">Click "Play Word" and type what you hear!</p>
+    <div class="controls">
+      <button id="play-word">🔊 Play Word</button>
+      <button id="hint-btn">💡 Hint</button>
+      <button id="skip-btn">⏭️ Skip</button>
+    </div>
+
+    <input type="text" id="answer" placeholder="Type the word..." autocomplete="off" />
+    <button id="submit-btn">Submit</button>
+
+    <p id="hint" class="hint-text"></p>
+    <p id="feedback"></p>
+  </main>
+
+  <script src="spelling-bee.js"></script>
+</body>
+</html>
